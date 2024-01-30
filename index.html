@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="game-name"><h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1></div>
+        <div class="score-board">
+            <div class="ComputerScore">COMPUTER SCORE
+                <input class="computer-score" readonly placeholder="0" type="number" >
+            </div>
+            <div class="PlayerScore">YOUR SCORE
+                <input class="your-score" readonly placeholder="0" type="number" >
+            </div>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="line1"> </div>
+        <div class="line2"> </div>
+        <div class="line3"> </div>
+        <div class="rock">
+            <img src="blue-circle.png" alt="blue-circle">
+            <img id="rock" class="rock-sign" src="rock.png" alt="rock-sign">
+        </div>
+        <div class="scissor">
+            <img src="purple-circle.png" alt="purple-circle">
+            <img id="scissor" class="scissor-sign" src="scissor.png" alt="scissor-sign">
+        </div>
+        <div class="paper">
+            <img src="orange-circle.png" alt="orange-circle">
+            <img id="paper" class="paper-sign" src="paper.png" alt="paper-sign">
+        </div>
+    </div >
+       
+    <button class="openModel"> RULES </button>
+    <div class="modal" id="modal">
+        <div class="inner-model">
+            <h3 class="game-rules">Game Rules</h3>
+            <ul style="list-style-type:square ;">
+                <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                <li><span>Agree ahead of time whether you&apos;ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+            </ul>
+        </div>
+        <button class="closeModel">X</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
